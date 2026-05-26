@@ -1,0 +1,51 @@
+@import "tailwindcss";
+/* --- index.css --- */
+
+/* Width (Vertical) and Height (Horizontal) */
+::-webkit-scrollbar {
+  width: 6px;   /* Width of the vertical scrollbar */
+  height: 6px;  /* Height of the horizontal scrollbar */
+}
+
+/* The Track (Background) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Keeps it clean and blends with your dark bg */
+  margin: 4px;
+}
+
+/* The Handle (Thumb) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1); /* Subtle gray color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+  cursor: pointer;
+}
+
+/* Corner where horizontal and vertical meet */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/* --- index.css --- */
+
+/* Force dark background on all select options */
+select option {
+  background-color: #0b0f19; /* Matches your dashboard dark theme */
+  color: #e2e8f0; /* Light text (slate-200) */
+  padding: 10px;
+}
+
+/* Optional: Style the scrollbar inside the dropdown (Chrome/Edge/Safari) */
+select::-webkit-scrollbar {
+  width: 8px;
+  background: #0b0f19;
+}
+select::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
